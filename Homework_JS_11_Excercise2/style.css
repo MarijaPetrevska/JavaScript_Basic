@@ -1,0 +1,111 @@
+/* Style for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+/* Heading 1 */
+h1 {
+  /* background-color: #45a049; */
+  color: red;
+}
+/* Style for the form container */
+.form-container {
+  margin-bottom: 30px; /* Adds space below the form */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form elements */
+form label {
+  margin-right: 10px;
+}
+
+form input, form select {
+  margin-bottom: 10px;
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the table container */
+.table-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style for the button inside the table */
+.button {
+  cursor: pointer;
+  color: red;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+/* Style for the total expenses section */
+#totalExpenses {
+  font-weight: bold;
+}
+
+/* Style for the Delete button */
+.button {
+  cursor: pointer;
+  color: white; 
+  background-color: #ff4d4d; 
+  border: 1px solid #e60000; 
+  padding: 5px 15px; 
+  border-radius: 4px; 
+  font-size: 14px; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+/* Hover effect when mouse is over the button */
+.button:hover {
+  background-color: #e60000; /* Darker red when hovered */
+  transform: scale(1.1); 
+}
+
+/* Active effect when button is pressed */
+.button:active {
+  background-color: #cc0000; 
+  transform: scale(0.95); 
+}
+
+/* Focus effect when button is focused (for accessibility) */
+.button:focus {
+  outline: none; 
+  box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.5); 
+}

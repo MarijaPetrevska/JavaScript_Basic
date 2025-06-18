@@ -1,0 +1,40 @@
+/* Applying the same style to all the HTML elements */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Style for the heading section */
+.header {
+  display: flex;
+  align-items: center; 
+  gap: 5px;  
+}
+.header img {
+  height: 60px;
+  width: 100px;
+  margin-top: 10px;
+}
+h1{
+  color: rgb(11, 162, 221);
+  font-style: normal;
+  margin-top: 20px; 
+}
+/* The course description paragraph  */
+.course {
+  color: #e0a326;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 20px; 
+  margin-left: 100px; 
+}
+/* The homework description paragraph */
+.homework{
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  margin-top: 20px; 
+  margin-left: 90px; 
+}

@@ -1,0 +1,31 @@
+
+=============================================
+=> HOMEWORK 11 - EXCERCISE 3
+=> Phone Book
+=============================================
+
+Plan to build the Phone Book Application with HTML, CSS and JavaScript
+- The app will alllow users to add, edit, and delete contacts from a table after validating the form inputs.
+
+1. HTML Structure
+Creating the HTML Structure: 
+- Creating the contact form (form to input contact details).
+- Creating the table to display the contacts.
+- Input fields: First Name, Last Name and Phone Number.
+- Buttons for Save, Edit and Delete operations.
+
+2. CSS Style
+Style the page with CSS (style the form, the table and the buttons to make the interface better and more user-friendly.)
+
+3. JavaScript
+In the JavaScript implementation of the Phone Book Api, I will use variables, functions and events 
+to manage the contacts and the interactions within the app.
+- Creating variables: 1. contacts (Array); 2. errorMessage (DOM element)
+- Creating functions: for saving, editing and deleting contacts and also for updating the table.
+- Creating events section: Events will call the functions in response to user interactions.
+(Click event on the "Save" button; Click event on the "Edit" button; Click on the "Delete" button.);
+
+
+
+
+

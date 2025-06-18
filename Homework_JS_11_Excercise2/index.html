@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Expense Tracker</title>
+</head>
+<body>
+<h1>Expense Tracker</h1>
+<!-- Form container -->
+ <div class="form-container">
+ <h3>Add a New Expense</h3>
+<!-- Expense Form -->
+<form id="expenseForm">
+  <label for="description">Description:</label>
+  <!-- Description: A text input for the name/details. -->
+  <input type="text" id="description" required>
+  <label for="amount">Amount:</label>
+  <!-- Amount: A numeric input for the amount spent. -->
+  <input type="number" id="amount" required>
+  <label for="category">Category:</label>
+  <!-- Category: A dropdown to choose the category (e.g., Food, Travel, Shopping, Bills). -->
+  <select id="category">
+    <option value="Food">Food</option>
+    <option value="Travel">Travel</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Bills">Bills</option>
+  </select>
+  <!-- Button to add an expense -->
+  <button type="submit">Add Expense</button>
+</form>
+</div>
+<!-- Table container -->
+ <div class="table-container">
+ <h3>Expenses List</h3>
+<!-- Expenses Table -->
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <!-- This is the column to the table called Action. It should contain Delete option for every record (row). -->
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="expenseList">
+    <!-- Expense rows will be dynamically added here -->
+  </tbody>
+</table>
+<!-- Total Expenses Summary -->
+<p><strong>Total Expenses:</strong> $<span id="totalExpenses">0.00</span></p>
+</div>
+<script src="./scripts/homework.js"></script>
+
+</body>
+</html>

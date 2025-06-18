@@ -1,0 +1,29 @@
+
+=============================================
+=> HOMEWORK 11 - EXCERCISE 2
+=> Expense Tracker
+=============================================
+
+1. HTML Structure
+- Creating a form with input fields: Description, Amount and Category
+- Creating a table to display expences
+- A section to show the total expenses
+
+2. CSS Styling
+- Style for the form, table, and buttons for a clean and user-friendly interface.
+
+3. JavaScript
+- Creating constructor function. (Defining the constructor for the Expense object.) 
+- AddExpense Function (Creating the function to add a new expense.)
+- Render Expenses ( A function to render the Expenses Table and update the Total Sum.)
+- Delete Expense Function ( Create the function to mark an expense as deleted.)
+- Update Total Expenses (Creating a function to calculate and display the total expenses.) 
+
+Variables section: Placed the expenses array at the top, where global variables are defined.
+
+Functions section: All the functions are grouped together and listed in the order they are defined.
+
+Events section: The event listener is at the end, after all the functions are defined, which is a common practice to ensure that the necessary functions are already available when events are triggered. 
+
+
+

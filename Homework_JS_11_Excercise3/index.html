@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone Book</title>
+</head>
+<body>
+<!-- Page Header (Main Title of the Page) -->
+    <h1>Phone Book</h1>
+    <!-- Form for entering contact details -->
+    <form id="contactForm">
+      <!-- Input field for first name -->
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" required><br><br>
+        <!-- Input field for last name -->
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" required><br><br>
+        <!-- Input field for phone number -->
+        <label for="phoneNumber">Phone Number: </label>
+        <!-- Button to call the saveContact Function to save the contact details -->
+        <input type="text" id="phoneNumber" required><br><br>
+        <button type="button" onclick="saveContact()">Save</button>
+    </form>
+
+    <!-- Section to display error messages if validation fails -->
+    <div class="error" id="errorMessage"></div>
+
+    <!-- Section displaying contacts -->
+    <h2>Contacts</h2>
+    <!-- Table for displaying the list of saved contacts -->
+    <table id="contactsTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <!-- Empty body to be populated dynamically with contacts -->
+        <tbody></tbody> 
+    </table>
+<!-- Link to the external JavaScript file (script) -->
+    <script src="./scripts/homework.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+WINTER HOMEWORK 
+ONLINE CALCULATOR
+
+=> HTML Stucture
+- DISPLAY: An input field that will show the current calculation or result. 
+- BUTTONS: A grid of buttons for numbers (0-9), operators (+, -, *, /), special buttons (C for clear, ← for backspace, . for decimal, = for equal).
+
+=> VARIABLES
+First, I started with creating the necessary variables: 
+
+display: a reference to the input field where we'll show the calculations. 
+(const display = document.getElementById('display');)
+
+currentInput: A string to store the current input or the ongoing calculation. It starts as an empty string (let currentInput = "";).
+
+=> FUNCTIONS
+   1. updateDisplay() - This function updates the display whenever the currentInput changes.
+   2. addNumber(number) - Adds a number (like 1, 2, 3, etc.) to the currentInput string.
+   3. addDecimal() - Adds a decimal point to the current number (only if it hasn’t been added already).
+   4. addOperator(operator) - Adds an operator (+, -, *, /) to currentInput, but only if the last character is not already an operator.
+   5. isOperator(currentCharacter) - Checks if the current character in currentInput is an operator (+, -, *, /). 
+   6. clearDisplay() - Clears the entire input, resetting currentInput to an empty string. 
+   7. calculate() - This function processes the input and calculates the result. 
+   8. processExpression(expression) - Breaks down the expression and processes multiplication and division first, then handles addition and subtraction.
+   9. processMultiplicationAndDivision(expression) - Processes multiplication and division operations first, following the order of operations.
+   10. processAdditionAndSubtraction(expression) - Handles addition and subtraction operations after multiplication and division. 
+   11. backspace() - Removes the last character from currentInput, allowing the user to correct any mistakes.
+
+=> Setting up EVENT LISTENERS in HTML
+=> Style with CSS
+
+
+
+
+
+
+
+ 
+

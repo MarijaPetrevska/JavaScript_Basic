@@ -1,0 +1,145 @@
+/* ------------------------ General Styles ------------------------ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #4CAF50;
+}
+
+h2 {
+  color: 4CAF50;
+  margin-left: 20px;
+  color: #4CAF50;
+}
+
+/* ------------------------ Table Styles ------------------------ */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  color: #333;
+}
+
+/* ------------------------ Form Styles ------------------------ */
+form {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3c8d40;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ------------------------ Error Message Styles ------------------------ */
+.error {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ------------------------ Edit and Delete Button Styles ------------------------ */
+td button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+td button:hover {
+  background-color: red;
+}
+
+td button:active {
+  background-color: red;
+}
+
+td button.delete-btn {
+  background-color: #f44336;
+}
+
+td button.delete-btn:hover {
+  background-color: #e53935;
+}
+
+td button.delete-btn:active {
+  background-color: #d32f2f;
+}

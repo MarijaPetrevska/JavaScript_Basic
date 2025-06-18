@@ -1,0 +1,54 @@
+=> Steps to Solve the Hangman Game
+
+======== VARIABLES
+
+Define the necessary variables:
+selectedWord: The word to be guessed.
+guessedLetters: Array to keep track of the guessed letters.
+lives: Number of lives the player has.
+hintUsed: Flag to track if the hint has been used.
+
+
+======== FUNCTIONS
+Define Functions:
+
+chooseWord(): Randomly select a word from a list of words.
+displayWord(): Display the word with underscores for unguessed letters.
+handleLetterClick(): Handle the click on a letter button. Check if the letter is correct, update lives and the guessed letters array.
+checkWin(): Check if the player has guessed all letters correctly.
+checkGameOver(): Check if the player has lost all lives.
+giveHint(): Reveal a clue for the selected word (if hint hasn’t been used).
+playAgain(): Reset the game for a new round.
+drawHangman(): Draw the hangman figure based on remaining lives.
+clearCanvas(): Clear the hangman drawing canvas.
+
+
+======== EVENT LISTENERS
+Set Up Event Listeners:
+
+Letter Buttons: Add event listeners to each letter button to trigger the handleLetterClick() function.
+Hint Button: Add an event listener to the hint button to trigger the giveHint() function.
+Play Again Button: Add an event listener to the play again button to trigger the playAgain() function.
+
+======== Initialize the Game:
+
+    Call the initGame() function to start the game:
+            Reset game variables.
+            Choose a word.
+            Display the word with underscores.
+            Enable letter buttons for guessing.
+
+======== During the Game:
+            The player clicks letter buttons.
+            The game checks if the letter is in the word.
+            Update the display of the word and the hangman figure.
+            If the word is guessed or lives are exhausted, the game ends and a message is shown.
+
+======== Winning or Losing:
+
+            Win: If all letters are guessed correctly, the player wins.
+            Game Over: If lives reach 0, the game is over, and the player loses.
+
+======== Play Again:
+
+=: After the game ends, the player can click "Play Again" to reset the game and start a new round.

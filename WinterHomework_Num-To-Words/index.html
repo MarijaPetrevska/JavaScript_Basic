@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS file (style.css) for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <!-- Title of the winter homework -->
+    <title>Numbers to Words</title>
+    
+</head>
+<body>
+  <!-- Main container holding all elements -->
+    <div class="container">
+      <!-- Header for the page -->
+        <h1>Numbers to Words</h1>
+        <!-- Row containing 2 columns: one for Input and one for Output -->
+        <!-- Input and output columns -->
+        <div class="row">
+          <!-- First Column -->
+            <div class="column">
+                <input type="number" id="numberInput" placeholder="Enter a number" />
+            </div>
+            <!-- Second Column -->
+            <div class="column">
+                <div id="result" class="output">Result will appear here.</div>
+            </div>
+        </div>
+        <!-- Button to start the conversion -->
+        <button onclick="convertToWords()">Convert</button>
+    </div>
+    <!-- Link to the external JavaScript file (homework.js) -->
+    <script src="./scripts/homework.js"></script>
+
+    </body>
+</html>

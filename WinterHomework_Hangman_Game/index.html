@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>Hangman Game</title>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the game -->
+    <div class="game-container">
+      <!-- Main heading for the game -->
+      <h1>HANGMAN</h1>
+      <!-- Subheading with additional description of the game -->
+      <h2>VANILLA JAVASCRIPT HANGMAN GAME</h2>
+      <!-- Instructions for the user -->
+      <h2>
+        Use the alphabet below to guess the word, or click hint to get a clue.
+      </h2>
+      <!-- Display for the number of remaining lives -->
+      <p id="lives">Lives Remaining: 10</p>
+      <!-- Canvas where the hangman figure will be drawn as the game progresses -->
+
+      <canvas id="hangman-canvas" width="150" height="150"></canvas>
+      <!-- Placeholder for displaying the word with guessed letters -->
+      <p id="word-display"></p>
+      <!-- Area to show game-related messages (e.g., win/lose messages) -->
+      <p id="message"></p>
+      <!-- Placeholder for showing a hint (if available) -->
+      <p id="clue"></p>
+      <!-- Section with buttons for each letter of the alphabet -->
+      <div class="letters">
+        <button class="letter-btn" data-letter="a">A</button>
+        <button class="letter-btn" data-letter="b">B</button>
+        <button class="letter-btn" data-letter="c">C</button>
+        <button class="letter-btn" data-letter="d">D</button>
+        <button class="letter-btn" data-letter="e">E</button>
+        <button class="letter-btn" data-letter="f">F</button>
+        <button class="letter-btn" data-letter="g">G</button>
+        <button class="letter-btn" data-letter="h">H</button>
+        <button class="letter-btn" data-letter="i">I</button>
+        <button class="letter-btn" data-letter="j">J</button>
+        <button class="letter-btn" data-letter="k">K</button>
+        <button class="letter-btn" data-letter="l">L</button>
+        <button class="letter-btn" data-letter="m">M</button>
+        <button class="letter-btn" data-letter="n">N</button>
+        <button class="letter-btn" data-letter="o">O</button>
+        <button class="letter-btn" data-letter="p">P</button>
+        <button class="letter-btn" data-letter="q">Q</button>
+        <button class="letter-btn" data-letter="r">R</button>
+        <button class="letter-btn" data-letter="s">S</button>
+        <button class="letter-btn" data-letter="t">T</button>
+        <button class="letter-btn" data-letter="u">U</button>
+        <button class="letter-btn" data-letter="v">V</button>
+        <button class="letter-btn" data-letter="w">W</button>
+        <button class="letter-btn" data-letter="x">X</button>
+        <button class="letter-btn" data-letter="y">Y</button>
+        <button class="letter-btn" data-letter="z">Z</button>
+      </div>
+      <!-- Controls for the game: buttons to get hints or play again -->
+      <div class="controls">
+      <!-- Button for providing a hint to the player -->
+       <button id="hint-btn">HINT</button>
+      <!-- Button to restart the game -->
+        <button id="play-again-btn">PLAY AGAIN</button>
+      </div>
+    </div>
+    <!-- External JavaScript file containing the game logic -->
+    <script src="./scripts/homework.js"></script>
+  </body>
+</html>

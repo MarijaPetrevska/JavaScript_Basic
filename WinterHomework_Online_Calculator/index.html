@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>My Online Calculator</title>
+    <!-- Link to external CSS file for styling the Calculator -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Calculator container -->
+    <div class="calculator">
+      <!-- Display area where the result or current input will be shown -->
+      <input type="text" id="display" disabled />
+      <!-- Container for all the calculator buttons -->
+      <div class="button-container">
+        <!-- Number buttons 7, 8, 9 -->
+        <input type="button" value="7" onclick="addNumber('7')" />
+        <input type="button" value="8" onclick="addNumber('8')" />
+        <input type="button" value="9" onclick="addNumber('9')" />
+        <!-- Operator button for division -->
+        <input type="button" value="/" onclick="addOperator('/')" />
+        <!-- Number buttons 4, 5, 6 -->
+        <input type="button" value="4" onclick="addNumber('4')" />
+        <input type="button" value="5" onclick="addNumber('5')" />
+        <input type="button" value="6" onclick="addNumber('6')" />
+        <!-- Operator button for multiplication -->
+        <input type="button" value="*" onclick="addOperator('*')" />
+        <!-- Number buttons 1, 2, and 3 -->
+        <input type="button" value="1" onclick="addNumber('1')" />
+        <input type="button" value="2" onclick="addNumber('2')" />
+        <input type="button" value="3" onclick="addNumber('3')" />
+        <!-- Operator button for subtraction -->
+        <input type="button" value="-" onclick="addOperator('-')" />
+        <!-- Number button for 0 -->
+        <input type="button" value="0" onclick="addNumber('0')" />
+        <!-- Decimal point button to allow floating-point numbers -->
+        <input type="button" value="." onclick="addDecimal()" />
+        <!-- Clear button to reset the calculator's display -->
+        <input type="button" value="C" onclick="clearDisplay()" />
+        <!-- Equal button to calculate the result -->
+        <input type="button" value="=" onclick="calculate()" />
+        <!-- Operator button for addition -->
+        <input type="button" value="+" onclick="addOperator('+')" />
+        <!-- Backspace button to remove the last character -->
+        <input type="button" value="←" onclick="backspace()" />
+      </div>
+    </div>
+
+    <script src="./scripts/homework.js"></script>
+  </body>
+</html>
